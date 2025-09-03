@@ -1,0 +1,28 @@
+[package]
+name = "zips2meta2parquet"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies.clap]
+version = "4"
+default-features = false
+features = [
+	"derive",
+	"color",
+	"error-context",
+	"help",
+	"std",
+	"suggestions",
+	"usage",
+]
+
+[dependencies.tokio]
+version = "1"
+default-features = false
+features = [
+	"macros",
+	"rt-multi-thread",
+]
+
+[dependencies.rs-zips2meta2parquet]
+path = "../.."
