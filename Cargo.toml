@@ -3,6 +3,13 @@ name = "rs-zips2meta2parquet"
 version = "0.1.0"
 edition = "2024"
 
+description = "Converts the metadata values of the zip files to a parquet."
+license = "Apache-2.0"
+repository = "https://github.com/takanoriyanagitani/rs-zips2meta2parquet"
+homepage = "https://github.com/takanoriyanagitani/rs-zips2meta2parquet"
+documentation = "https://docs.rs/rs-zips2meta2parquet/latest"
+keywords = ["zip", "parquet", "conversion", "data-processing", "arrow"]
+
 [lints.rust]
 unsafe_code = "forbid"
 
