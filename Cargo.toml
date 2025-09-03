@@ -1,0 +1,53 @@
+[package]
+name = "rs-zips2meta2parquet"
+version = "0.1.0"
+edition = "2024"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "forbid"
+expect_used = "forbid"
+
+[dependencies.rs-zips2meta2rbat2stream]
+version = "0"
+default-features = false
+features = [
+]
+
+[dependencies.futures]
+version = "0"
+default-features = false
+features = [
+	"async-await",
+	"executor",
+	"std",
+]
+
+[dependencies.tokio]
+version = "1"
+default-features = false
+features = [
+	"fs",
+	"io-util",
+]
+
+[dependencies.futures-util]
+version = "0"
+default-features = false
+features = [
+	"std",
+]
+
+[dependencies.parquet]
+version = "56"
+default-features = false
+features = [
+	"arrow",
+	"flate2-zlib-rs",
+	"lz4",
+	"snap",
+	"zstd",
+	"async",
+]
